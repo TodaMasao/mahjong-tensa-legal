@@ -16,12 +16,17 @@
 </head>
 <body>
 <h1>プライバシーポリシー — 麻雀点覚</h1>
-<p class="muted">最終更新日: 2026-06-23</p>
+<p class="muted">最終更新日: 2026-09-19</p>
 
 <h2>1. 基本方針</h2>
-<p>麻雀点覚（以下「本アプリ」）は、ユーザーの個人情報を収集・送信しません。学習の進捗・成績・設定はすべてお使いの端末内のみに保存されます。ただし無料版では第三者の広告（Google AdMob）を表示し、広告配信のために Google が一定のデータを取得します（下記「4. 広告について」）。</p>
+<p>麻雀点覚（以下「本アプリ」）は、氏名・メールアドレス・電話番号などの、あなたを直接特定できる情報を取得しません。アカウント登録もありません。</p>
+<p>本アプリが外部へ送るのは次の2つだけです。</p>
+<ul>
+  <li>第三者の広告（Google AdMob）の配信に必要なデータ（下記「5. 広告について」）</li>
+  <li>あなたが同意した場合に限り、アプリの利用状況（下記「3. 利用状況の送信について」）</li>
+</ul>
 
-<h2>2. 端末内に保存される情報</h2>
+<h2>2. 端末内にだけ保存される情報</h2>
 <p>以下は端末内（SwiftData / UserDefaults）にのみ保存され、外部に送信されません。アプリを削除すると消去されます。</p>
 <ul>
   <li>クイズの成績・正答率・連続正解・苦手データ</li>
@@ -29,10 +34,30 @@
   <li>「使い方ガイド表示済み」などの表示状態フラグ</li>
 </ul>
 
-<h2>3. 課金（App内課金）について</h2>
-<p>本アプリの課金は「広告を非表示」（買い切り・非消費型）のみです。学習機能はすべて無料です。決済は Apple の App Store / StoreKit が処理し、本アプリがカード番号等の決済情報を受け取ることはありません。購入状態は端末上で Apple の取引情報から都度判定し、独自に保存しません。</p>
+<h2>3. 利用状況の送信について</h2>
+<p>初回起動時にお尋ねし、<strong>「送信する」を選んだ場合にのみ</strong>、アプリの利用状況を Google の分析サービス（Firebase Analytics / Google Analytics for Firebase）へ送信します。</p>
+<p><strong>送るもの</strong>（操作が起きたという事実と、その回数だけです）</p>
+<ul>
+  <li>クイズを初めて1問解いたこと</li>
+  <li>「広告を非表示」の画面を開いたこと</li>
+  <li>購入の結果（成功／取消／保留／失敗のいずれか）</li>
+  <li>購入の復元を操作したこと</li>
+  <li>Google が自動的に記録する項目（初回起動、起動、アプリ内課金、端末の機種・OS のバージョン、おおよその地域、アプリ単位のランダムな識別子）</li>
+</ul>
+<p><strong>送らないもの</strong></p>
+<ul>
+  <li>クイズの成績・正答率・連続正解・苦手データ</li>
+  <li>あなたが入力した内容、氏名・連絡先などの個人情報</li>
+</ul>
+<p>目的は、アプリのどの画面まで進んで、どこでやめたかを数え、使いにくいところを直すことです。広告の配信やターゲティングには使いません。</p>
+<p>送信先は Google LLC で、Firebase のデータ処理条項に従って取り扱われます。本アプリは、本ポリシーと同等の保護を求めるこの条件に基づいてのみ利用します。詳細は <a href="https://firebase.google.com/support/privacy">Firebase のプライバシーとセキュリティ</a> をご確認ください。</p>
+<p>EEA（欧州経済領域）・英国・スイスの App Store をお使いの端末には送信しません。この場合は同意もお尋ねしません。</p>
 
-<h2>4. 広告について</h2>
+<h2>4. 課金（App内課金）について</h2>
+<p>本アプリの課金は「広告を非表示」（買い切り・非消費型）のみです。学習機能はすべて無料です。決済は Apple の App Store / StoreKit が処理し、本アプリがカード番号等の決済情報を受け取ることはありません。購入状態は端末上で Apple の取引情報から都度判定し、独自に保存しません。</p>
+<p>利用状況の送信に同意するかどうかは、課金や機能の利用に一切影響しません。</p>
+
+<h2>5. 広告について</h2>
 <p>無料版では <strong>Google AdMob</strong> によるバナー広告を表示します。広告配信のため、Google は端末識別子・おおよその位置（IPベース）・広告操作などのデータを取得・利用することがあります。詳細は Google のポリシーをご確認ください: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>。</p>
 <ul>
   <li><strong>「広告を非表示」（買い切り）を購入すると広告は表示されません。</strong></li>
@@ -40,27 +65,62 @@
   <li>将来パーソナライズ広告や EEA/英国向けの同意管理（UMP）を導入する場合は、本ポリシーと App Store のプライバシー表示を更新します。</li>
 </ul>
 
-<h2>5. お子さまのプライバシー</h2>
-<p>本アプリは開発者による個人情報の収集を行いません。年齢に関わらず安全にご利用いただけます。</p>
+<h2>6. 保持期間・同意の撤回・削除</h2>
+<p>利用状況の送信は、アプリの設定画面の「利用状況を送信」からいつでもオフにできます。オフにすると、それ以降は1件も送信されず、端末内のアプリ単位の識別子も作り直されます。</p>
+<p>既に送信された分は、Google Analytics のデータ保持期間の設定に従って削除されます（本アプリの設定値は2か月です）。オフにした時点でさかのぼって消えるわけではありません。</p>
+<p>アプリを削除した場合も、端末内の記録は消えますが、送信済みの分は上記の保持期間の経過によって削除されます。</p>
+<p>削除のご請求など個別のお問い合わせは、下記「8. お問い合わせ」からご連絡ください。</p>
 
-<h2>6. お問い合わせ</h2>
+<h2>7. お子さまのプライバシー</h2>
+<p>本アプリは、あなたを直接特定できる情報を取得しません。利用状況の送信は同意した場合にのみ行われ、いつでもオフにできます。</p>
+
+<h2>8. お問い合わせ</h2>
 <p>本ポリシーに関するお問い合わせは、App Store の本アプリ製品ページに記載の開発元、または<a href="support.html">サポートページ</a>をご確認ください。</p>
 
 <hr>
 
 <h1>Privacy Policy — Mahjong Tenkaku</h1>
-<p class="muted">Last updated: 2026-06-23</p>
+<p class="muted">Last updated: 2026-09-19</p>
 <h2>1. Overview</h2>
-<p>Mahjong Tenkaku ("the App") does not collect or transmit personal information. Progress, results, and settings are stored only on your device. The free version shows third-party ads (Google AdMob), and Google obtains certain data for ad delivery (see "4. Advertising").</p>
+<p>Mahjong Tenkaku ("the App") does not obtain information that directly identifies you, such as your name, email address, or phone number. There is no account registration.</p>
+<p>The App sends only two things outside your device:</p>
+<ul>
+  <li>Data required to deliver third-party ads (Google AdMob) — see "5. Advertising"</li>
+  <li>App usage data, and only if you agree to it — see "3. Usage Data"</li>
+</ul>
 <h2>2. Data Stored On-Device Only</h2>
 <p>Quiz results, accuracy, streaks, weak-hands data, session state, and display-state flags (such as "guide seen") are stored locally and never transmitted; they are removed when the App is deleted.</p>
-<h2>3. In-App Purchase</h2>
+<h2>3. Usage Data</h2>
+<p>On first launch the App asks you, and <strong>only if you choose "Send"</strong> does it send app usage data to Google's analytics service (Firebase Analytics / Google Analytics for Firebase).</p>
+<p><strong>What is sent</strong> (only the fact that an action happened, and how many times):</p>
+<ul>
+  <li>That you answered your first quiz question</li>
+  <li>That you opened the "Remove Ads" screen</li>
+  <li>The result of a purchase (success, cancelled, pending, or failed)</li>
+  <li>That you tapped restore purchases</li>
+  <li>Items Google records automatically (first open, app open, in-app purchase, device model and OS version, approximate region, and a random per-app instance identifier)</li>
+</ul>
+<p><strong>What is not sent</strong></p>
+<ul>
+  <li>Quiz results, accuracy, streaks, or weak-hands data</li>
+  <li>Anything you type, your name, or contact details</li>
+</ul>
+<p>The purpose is to count how far people get in the App and where they stop, so we can fix what is hard to use. It is not used for ad delivery or targeting.</p>
+<p>The recipient is Google LLC, which processes the data under the Firebase data processing terms. The App uses the service only under those terms, which require protection equivalent to this policy. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.</p>
+<p>No usage data is sent from devices whose App Store storefront is in the EEA, the United Kingdom, or Switzerland. In those regions the App does not ask for consent either.</p>
+<h2>4. In-App Purchase</h2>
 <p>The only purchase is "Remove Ads" (non-consumable). All learning features are free. Payment is handled entirely by Apple; the App never receives your payment details.</p>
-<h2>4. Advertising</h2>
+<p>Whether you agree to send usage data has no effect on purchases or on any feature of the App.</p>
+<h2>5. Advertising</h2>
 <p>The free version shows banner ads via <strong>Google AdMob</strong>. Google may collect/use data such as device identifiers, approximate (IP-based) location, and ad interactions. See <a href="https://policies.google.com/technologies/ads">Google's policy</a>. <strong>Purchasing "Remove Ads" removes all ads.</strong> This version does not request App Tracking Transparency / IDFA and serves non-personalized ads by default.</p>
-<h2>5. Children's Privacy</h2>
-<p>The developer collects no personal data; the App is safe for users of all ages.</p>
-<h2>6. Contact</h2>
+<h2>6. Retention, Withdrawing Consent, and Deletion</h2>
+<p>You can turn usage data off at any time from "Send usage data" in the App's Settings. Once off, nothing further is sent and the per-app instance identifier on your device is reset.</p>
+<p>Data already sent is deleted according to the Google Analytics data retention setting (this App uses 2 months). Turning it off does not retroactively delete what was already sent.</p>
+<p>If you delete the App, on-device records are removed; data already sent is deleted when the retention period above elapses.</p>
+<p>For deletion requests or other individual enquiries, please use "8. Contact" below.</p>
+<h2>7. Children's Privacy</h2>
+<p>The App does not obtain information that directly identifies you. Usage data is sent only if you agree, and can be turned off at any time.</p>
+<h2>8. Contact</h2>
 <p>For questions, please refer to the developer information on the App's App Store product page, or the <a href="support.html">support page</a>.</p>
 </body>
 </html>
